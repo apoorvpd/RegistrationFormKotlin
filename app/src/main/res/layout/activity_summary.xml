@@ -4,29 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="36dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your Account Details" />
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/activity_summary_heading"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/text_view_user_full_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="16sp"
         tools:text="Mr Fullname User" />
 
     <TextView
         android:id="@+id/text_view_email_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/blue_accent"
+        android:textSize="16sp"
         tools:text="email@address.com" />
 
     <TextView
         android:id="@+id/text_view_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/blue_accent"
+        android:textSize="16sp"
         tools:text="07711 223344" />
 
 </LinearLayout>

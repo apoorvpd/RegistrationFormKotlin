@@ -1,5 +1,6 @@
 package com.example.registrationform
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -36,5 +37,9 @@ class MainActivity : AppCompatActivity() {
             edit_text_phone.text.toString(),
             edit_text_password.text.toString(),
         )
+
+        val intent = Intent(this, SummaryActivity::class.java)
+        intent.putExtra("User", user)
+        startActivity(intent)
     }
 }
